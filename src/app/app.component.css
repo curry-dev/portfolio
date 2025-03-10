@@ -1,0 +1,108 @@
+  #myName {
+    font-family: 'Barriecito', cursive;
+    color: var(--accent);
+    font-size: 35px;
+  }
+  
+  .custom-nav {
+    color: var(--text-content);
+    font-weight: bold;
+  }
+  
+  .custom-nav:hover {
+    color: var(--accent);
+    transition: all .5s;
+    transform: scale(1.2);
+  }
+  
+  .contact-btn {
+    border: 2px solid var(--accent);
+    padding: 10px 25px;
+    background-color: var(--white);
+    color: var(--accent);
+  }
+  
+  .contact-btn:hover {
+    color: var(--white);
+    background-color: var(--accent);
+    transition: all .5s;
+  }
+  
+  .fa-github,
+  .fa-linkedin-in {
+    color: var(--text-content);
+  }
+  
+  .fa-github:hover {
+    color: #89929b !important;
+    transition: 0.3s;
+    transform: scale(1.5);
+  }
+  
+  .fa-linkedin-in:hover {
+    color: #0077b5 !important;
+    transition: 0.3s;
+    transform: scale(1.5);
+  }
+  
+  
+  
+  
+  /* #nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+  } */
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #f26674f2;
+    overflow-x: hidden;
+    transition: 0.3s;
+  }
+  
+  .overlay-content {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    font-size: 36px;
+    /* color: white; */
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+  }
+  
+
+
+  #footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--constant);
+  }

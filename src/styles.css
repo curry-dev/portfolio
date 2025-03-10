@@ -1,1 +1,252 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --accent: #f26674;
+    --tmp: #f26674;
+    --accent-light: #ffd7d7;
+  
+    --black: #181818;
+    --white: #fcfcfc;
+  
+    --text-content: rgb(40, 40, 40);
+    --constant: #6e6c6d;
+  
+    --heading: 'Nunito', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100%;
+    user-select: none;
+  }
+  
+  body {
+    height: 100%;
+    background-color: var(--white);
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: "Nunito", sans-serif;
+    font-weight: bold;
+    color: var(--text-content);
+    text-align: justify;
+    /* cursor: url('cursors/accent-arrow.cur'), auto; */
+    transition: 0.3s;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    word-break: keep-all;
+    word-wrap: break-word;
+  }
+  
+  .img-fluid {
+    height: auto;
+  }
+  
+  .allEmojis {
+    width: auto;
+    height: 1.2em;
+  }
+
+  .text-content {
+    color: var(--text-content);
+  }
+  
+  .heading {
+    font-size: 50px;
+    font-family: var(--heading);
+    color: var(--accent);
+    text-align: left;
+  }
+  
+  .contact-heading {
+    font-size: 20px;
+    color: var(--black);
+  }
+
+
+
+
+
+  
+  
+  
+  /***************** DARKMODE *****************/
+  .change-mode {
+    /* transition: 0.3s; */
+    /* --accent-light: rgba(255, 255, 255, 0.3); */
+    --accent-light: #f26674;
+    --tmp: #802a31;
+    --text-content: #fcfcfc;
+    --black: #fcfcfc;
+    --white: #181818;
+  }
+  
+  .change-mode .fa-arrow-up {
+    color: white;
+  }
+  
+  .change-mode .fa-arrow-up:hover {
+    color: black;
+  }
+  
+  .change-mode .container {
+    background-color: var(--bg-color);
+  }
+  
+  /* .darkmode_button {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+  } */
+  /***************** DARKMODE *****************/
+
+
+
+
+
+  /* work */
+
+  .box-contact:hover {
+    /* border: 1px solid var(--accent); */
+    background-color: var(--accent);
+    transition: 0.3s;
+  }
+  
+  .box-heading {
+    font-size: 25px;
+    color: var(--accent);
+  }
+  
+  .box p {
+    margin: 5px;
+  }
+  
+  hr {
+    color: var(--accent);
+  }
+  
+  .company-link {
+    color: var(--accent);
+  }
+  
+  .company-link:hover {
+    color: var(--black);
+    transition: all .5s;
+  }
+  
+  .project-link {
+    color: var(--accent);
+  }
+  
+  .project-link:hover {
+    color: var(--accent);
+    border-bottom: 2px solid var(--accent);
+    transition: all .1s;
+  }
+
+
+
+  #rotater:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+
+  
+  .work-box {
+    background-color: var(--accent-light);
+    /* cursor: pointer; */
+    border-radius: 10px;
+    border: 2px solid black;
+  
+    position: relative;
+    bottom: 7px;
+    right: 4px;
+    box-shadow: 4px 7px var(--tmp);
+  }
+  
+  /* .work-box:hover {
+    position: relative;
+    bottom: 7px;
+    box-shadow: 0 7px var(--accent);
+  } */
+  
+  .work-box:active {
+    /* position: relative; */
+    top: 2px;
+    left: 4px;
+    box-shadow: none;
+  }
+  
+  .work-box:hover > img {
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+  
+  .emailId {
+    color: var(--accent);
+  }
+  
+  .emailId:hover {
+    color: var(--accent);
+    border-bottom: 1px solid var(--accent);
+  }
+  
+  .company-box {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: var(--accent);
+    /* cursor: pointer; */
+  }
+  
+  .company-pointers-box {
+    border: 3px solid black;
+    background-color: var(--accent);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .company-pointers-box p {
+    color: var(--accent-light);
+  }
+  
+  .confetti-button {
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: var(--accent);
+    color: var(--white);
+  
+    position: relative;
+    bottom: 7px;
+    right: 4px;
+    box-shadow: 4px 7px var(--constant);
+  }
+  
+  .confetti-button:active {
+    top: 2px;
+    left: 4px;
+    box-shadow: none;
+  }
+  
+  .confetti-button:hover {
+    background-color: var(--accent-light);
+    color: var(--black);
+    transition: all 0.3s;
+  }
+  
+  .button-wrapper {
+    padding: 0;
+  }
+  
+  
+  
+  
+  
+  
