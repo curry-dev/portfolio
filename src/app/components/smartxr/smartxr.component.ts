@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfettiService } from '../../services/confetti.service';
 
 @Component({
   selector: 'app-smartxr',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './smartxr.component.css'
 })
 export class SmartxrComponent {
-
+  constructor(public confettiService: ConfettiService) {}
 }

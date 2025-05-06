@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfettiService } from '../../services/confetti.service';
 
 @Component({
   selector: 'app-salahkaar',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './salahkaar.component.css'
 })
 export class SalahkaarComponent {
-
+  constructor(public confettiService: ConfettiService) {}
 }

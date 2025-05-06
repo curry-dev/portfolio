@@ -9,7 +9,7 @@ import { WorkupComponent } from './components/workup/workup.component';
 import { MarshallComponent } from './components/marshall/marshall.component';
 import { CurryninjaComponent } from './components/curryninja/curryninja.component';
 import { SmartxrComponent } from './components/smartxr/smartxr.component';
-
+import { YouComponent } from './components/you/you.component';
 
 export const routes: Routes = [
     {
@@ -48,6 +48,10 @@ export const routes: Routes = [
     {
         path: 'marshall', 
         component: MarshallComponent
+    },
+    {
+        path: 'you',
+        component: YouComponent
     },
     {
         path: 'curryninja', 

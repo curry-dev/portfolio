@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ConfettiService } from '../../services/confetti.service';
 
 @Component({
   selector: 'app-workup',
@@ -8,5 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './workup.component.css'
 })
 export class WorkupComponent {
-
+  constructor(public confettiService: ConfettiService) {}
 }

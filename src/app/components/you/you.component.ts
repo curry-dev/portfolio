@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { ConfettiService } from '../../services/confetti.service';
 
 @Component({
-  selector: 'app-marshall',
+  selector: 'app-you',
   standalone: true,
   imports: [],
-  templateUrl: './marshall.component.html',
-  styleUrl: './marshall.component.css'
+  templateUrl: './you.component.html',
+  styleUrl: './you.component.css'
 })
-export class MarshallComponent {
+export class YouComponent {
   constructor(public confettiService: ConfettiService) {}
 }

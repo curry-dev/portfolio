@@ -8,13 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  // image = document.querySelector("#rotateMe");
-  // rotation: number = 0;
-  // angle: number = 90;
+  image = document.querySelector("#rotateMe");
+  rotation: number = 0;
+  angle: number = 90;
 
-  // rotateImage() {
-  //   // this.image.style.transition = 'all .5s';
-  //   this.rotation = (this.rotation + this.angle) % 360;
-  //   this.image = `rotate(${this.rotation}deg)`;
-  // }
+  rotateImage() {
+    this.rotation = (this.rotation + this.angle) % 360;
+    this.image?.setAttribute('style', `transform: rotate(${this.rotation}deg); transition: all .5s;`);
+  }
 }
