@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -8,12 +8,15 @@ import { Component } from '@angular/core';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  image = document.querySelector("#rotateMe");
+  @ViewChild('rotateMe', { static: false }) imageRef!: ElementRef;
   rotation: number = 0;
   angle: number = 90;
 
   rotateImage() {
     this.rotation = (this.rotation + this.angle) % 360;
-    this.image?.setAttribute('style', `transform: rotate(${this.rotation}deg); transition: all .5s;`);
+    if (this.imageRef) {
+      this.imageRef.nativeElement.style.transform = `rotate(${this.rotation}deg)`;
+      this.imageRef.nativeElement.style.transition = 'all .5s';
+    }
   }
 }
