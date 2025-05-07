@@ -14,4 +14,9 @@ import { RouterOutlet, RouterLink, RouterModule } from '@angular/router';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  toggleDarkMode() {
+    document.body.classList.toggle('change-mode');
+  }
+  
 }

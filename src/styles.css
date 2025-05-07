@@ -75,8 +75,6 @@ p {
 
 /***************** DARKMODE *****************/
 .change-mode {
-  /* transition: 0.3s; */
-  /* --accent-light: rgba(255, 255, 255, 0.3); */
   --accent-light: #f26674;
   --tmp: #802a31;
   --text-content: #fcfcfc;
