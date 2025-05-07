@@ -17,6 +17,12 @@ export class AppComponent {
 
   toggleDarkMode() {
     document.body.classList.toggle('change-mode');
+    const modeImage = document.querySelector('.mode') as HTMLImageElement;
+    if (document.body.classList.contains('change-mode')) {
+      modeImage.src = './assets/emojis/light-mode.png';
+    } else {
+      modeImage.src = './assets/emojis/dark-mode.png';
+    }
   }
   
 }
