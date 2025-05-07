@@ -113,7 +113,8 @@ p {
 } */
 
 #myName {
-  font-family: 'Barriecito', cursive;
+  /* font-family: 'Barriecito', cursive; */
+  font-weight: bold;
   color: var(--accent);
   font-size: 35px;
 }
