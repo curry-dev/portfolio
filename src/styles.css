@@ -468,7 +468,7 @@ hr {
   bottom: 0;
   left: 0;
   text-align: center;
-  background-color: var(--white);
+  background: transparent;
   color: var(--constant);
 }
 
@@ -479,4 +479,67 @@ hr {
   background-image: url("assets/art/bg.jpg");
   background-attachment: fixed;
   background-size: cover;
+} */
+
+
+
+.map-img {
+  position: relative;
+  width: 100%;
+}
+
+.map-img:hover {
+  filter: brightness(115%);
+  /* transform: scale(1.1); */
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.map-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: none;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.map-img:hover .map-caption {
+  visibility: visible;
+  opacity: 1;
+}
+
+.map-btn {
+  border: 2px solid var(--accent);
+  padding: 10px 25px;
+  background-color: var(--white);
+  color: var(--accent);
+}
+
+
+
+/* .grid-container {
+  position:relative;
+  display:grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-container img {
+  cursor: pointer;
+  position: absolute;
+  max-width: 200px;
+  height: auto;
+  transition: all 0.3s ease;
+  transform: translate(var(--x-position), var(--y-position)) scale(0.75);
+}
+
+.grid-container img:hover {
+    transform: translate(var(--x-position), var(--y-position)) scale(1.25);
+    z-index: 999 !important;
 } */

@@ -1,0 +1,13 @@
+#image {
+    position: absolute;
+    transition: none;
+    pointer-events: none;
+    width: 100px;
+}
+
+.container1 {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+  

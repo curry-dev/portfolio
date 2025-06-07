@@ -3,39 +3,22 @@
         <div id="navbar" class="py-4 d-flex justify-content-between">
             
             <div class="mx-2 py-2">
-                <input 
-                    id="myName" 
-                    type="button" 
-                    class="font-weight-bold d-block d-sm-inline" 
-                    value="DEVA"
-                    style="border: 0px; background-color: transparent;" 
-                    routerLink="/home"
-                    routerLinkActive="active-link"
-                />
+                <input id="myName" type="button" class="font-weight-bold d-block d-sm-inline" value="deva" style="border: 0px; background-color: transparent;" routerLink="/home" routerLinkActive="active-link" />
                 
-                <button 
-                    class="custom-nav font-weight-bold m-2 d-none d-md-inline"
-                    style="border: 0px; background-color: transparent;"
-                >
-                    <a routerLink="/tech" routerLinkActive="active-link">TECH</a>
+                <!-- <button class="custom-nav font-weight-bold m-2 d-none d-md-inline" style="border: 0px; background-color: transparent;">
+                    <a routerLink="/tech" routerLinkActive="active-link">tech</a>
                     <img src="./assets/emojis/work.png" class="allEmojis">
                 </button>
                 
-                <button 
-                    class="custom-nav font-weight-bold m-2 d-none d-md-inline"
-                    style="border: 0px; background-color: transparent;"
-                >
-                    <a routerLink="/art" routerLinkActive="active-link">ART</a>
+                <button class="custom-nav font-weight-bold m-2 d-none d-md-inline" style="border: 0px; background-color: transparent;">
+                    <a routerLink="/art" routerLinkActive="active-link">art</a>
                     <img src="./assets/emojis/art.png" class="allEmojis">
                 </button>
 
-                <button 
-                    class="custom-nav font-weight-bold m-2 d-none d-md-inline"
-                    style="border: 0px; background-color: transparent;"
-                >
-                    <a routerLink="/about" routerLinkActive="active-link">ABOUT</a>
+                <button class="custom-nav font-weight-bold m-2 d-none d-md-inline" style="border: 0px; background-color: transparent;" >
+                    <a routerLink="/about" routerLinkActive="active-link">about</a>
                     <img src="./assets/emojis/about.png" class="allEmojis">
-                </button>
+                </button> -->
             </div>
 
             <div class="mx-2 py-2 d-none d-sm-inline-block d-md-inline-block">
@@ -48,7 +31,7 @@
                 <a href="https://www.linkedin.com/in/devankshi/" target="_blank" class="font-weight-bol m-2">
                     <i class="fa-brands fa-linkedin-in fa-lg"></i>
                 </a>
-                <a href="mailto:dldeshmu@usc.edu" class="contact-btn fw-bold m-2 d-none d-sm-inline-block d-md-inline-block">SAY HELLO!</a>
+                <a href="mailto:dldeshmu@usc.edu" class="contact-btn fw-bold m-2 d-none d-sm-inline-block d-md-inline-block">say hello</a>
                 <button (click)="toggleDarkMode()" class="darkmode_button mt-4 text-end" style="padding: 0; background: transparent; border: 0;">
                     <img class="mode" src="./assets/emojis/dark-mode.png" style="height: 30px; width: 30px;" />
                 </button>
@@ -57,17 +40,34 @@
         </div>
     </div>
 </div>
+
+<div class="container1" (mousemove)="onMouseMove($event)">
+    <img
+      *ngIf="!hasReached"
+      src="assets/map/monument1.webp"
+      id="image"
+      [ngStyle]="{ left: imageX + 'px', top: imageY + 'px' }"
+    />
+    <img
+      *ngIf="hasReached"
+      src="assets/map/monument.webp"
+      id="image"
+      [ngStyle]="{ left: imageX + 'px', top: imageY + 'px' }"
+    />
+</div>
   
-  <div class="container d-none d-sm-block" style="padding: 0;">
+  
+  
+  
+<!-- <div class="container d-none d-sm-block" style="padding: 0;">
     <div class="container-fluid" id="footer">
         <div class="row justify-content-between">
             <div class="col my-2" style="padding: 0;">
-                Designed and built by Devankshi Deshmukh :D
-                <!-- <br>&#169; Devankshi Deshmukh 2023 - Los Angeles CA -->
+                i built this :D
             </div>
         </div>
     </div>
-</div>
+</div> -->
   
-  <router-outlet></router-outlet>
+<router-outlet></router-outlet>
   
