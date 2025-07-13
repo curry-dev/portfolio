@@ -7,7 +7,7 @@
                 <div class="company-box" style="padding: 50px 0;">
                     <div class="row" style="padding: 0; margin: 0;">
                         <div class="col d-flex justify-content-center">
-                            <img src="../../assets/work-art/curryninja/profile-circle.jpg" style="height:100px; width: auto; border-radius: 50%; border: 1px solid black;">
+                            <img ngSrc="assets/work-art/curryninja/profile-circle.jpg" style="height:100px; width: auto; border-radius: 50%; position: relative; border: 1px solid black;" fill priority>
                         </div>
                     </div>
                     <div class="row" style="padding: 0; margin: 0;">
@@ -39,19 +39,9 @@
             <p style="font-size: 2.5em; padding: 0; text-align: center; color: black;" class="pt-3">I drew these :D</p>
     
             <div class="row pb-5">
-                <img src="../../assets/work-art/curryninja/drawings/animals.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/broken.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/Delilah.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/levi.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/itadori + nobara + megumi.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/mikey.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/pjo-tto.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 1px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/picnic-final.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/megumi-blooming.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/cdrama.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/canvasdropart-dtiys.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <img src="../../assets/work-art/curryninja/drawings/chihiro-haku.jpg" class="m-1 p-0" style="height:330px; width:auto; border: 3px solid black;">
-                <!-- <span class="box-heading">and more :)</span> -->
+                <div class="fullwrap p-0 m-1" *ngFor="let image of images">
+                    <img ngSrc="assets/work-art/curryninja/drawings/{{ image.path }}" style="height:330px; width:auto; position: relative; border: 3px solid black;" fill priority>
+                </div>
             </div>
         </div>
     </div>
