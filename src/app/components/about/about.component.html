@@ -2,11 +2,11 @@
     <div class="container-fluid h-100" style="padding: 0;">
 
         <div class="row align-items-center h-100" style="margin: 0; contain: layout;">
-            <div id="myImageParent" class="myImageParent row-md-6 col-lg-4 d-flex justify-content-center">
-                <img #rotateMe src="./assets/about/meWithFrame.png" class="img-fluid mb-3">
+            <div class="row-md-6 col-lg-4 d-flex justify-content-center">
+                <img #rotateMe ngSrc="assets/about/meWithFrame.png" style="height: 300px; width: auto; position: relative" class="img-fluid mb-3" fill priority>
             </div>
             <div class="d-none d-lg-block col-lg-1 d-flex justify-content-center" id="rotater">
-                <img class="image" src="./assets/about/rotater.png" (click)="rotateImage()" class="img-fluid" />
+                <img class="image" src="assets/about/rotater.png" (click)="rotateImage()" class="img-fluid" />
                 <!-- <span style="font-size: 10px;"><center>click here lol</center></span> -->
             </div>
 

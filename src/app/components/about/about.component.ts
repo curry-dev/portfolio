@@ -26,7 +26,7 @@ export class AboutComponent {
     { path: 'diamond-hacks.JPG', caption: 'Demoing my project at UCDC DiamondHacks 2025!' },
     { path: 'lahacks.jpeg', caption: 'Demoing my solo project at UCLA LAHacks 2025!' },
     { path: 'graduation-ceremony.jpeg', caption: 'Graduation ceremony at USC!' },
-    { path: 'beforevsafter.jpeg', caption: ':)' }
+    { path: 'before-vs-after.jpeg', caption: ':)' }
   ];
 
   rotateImage() {
