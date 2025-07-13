@@ -5,7 +5,7 @@
             <div class="mx-2 py-2">
                 <input id="myName" type="button" class="font-weight-bold d-block d-sm-inline" value="deva" style="border: 0px; background-color: transparent;" routerLink="/home" routerLinkActive="active-link" />
                 
-                <!-- <button class="custom-nav font-weight-bold m-2 d-none d-md-inline" style="border: 0px; background-color: transparent;">
+                <button class="custom-nav font-weight-bold m-2 d-none d-md-inline" style="border: 0px; background-color: transparent;">
                     <a routerLink="/tech" routerLinkActive="active-link">tech</a>
                     <img src="./assets/emojis/work.png" class="allEmojis">
                 </button>
@@ -18,7 +18,7 @@
                 <button class="custom-nav font-weight-bold m-2 d-none d-md-inline" style="border: 0px; background-color: transparent;" >
                     <a routerLink="/about" routerLinkActive="active-link">about</a>
                     <img src="./assets/emojis/about.png" class="allEmojis">
-                </button> -->
+                </button>
             </div>
 
             <div class="mx-2 py-2 d-none d-sm-inline-block d-md-inline-block">
@@ -41,7 +41,7 @@
     </div>
 </div>
 
-<div class="container1" (mousemove)="onMouseMove($event)">
+<!-- <div class="container1" (mousemove)="onMouseMove($event)">
     <img
       *ngIf="!hasReached"
       src="assets/map/monument1.webp"
@@ -54,12 +54,9 @@
       id="image"
       [ngStyle]="{ left: imageX + 'px', top: imageY + 'px' }"
     />
-</div>
-  
-  
-  
-  
-<!-- <div class="container d-none d-sm-block" style="padding: 0;">
+</div> -->
+
+<div class="container d-none d-sm-block" style="padding: 0;">
     <div class="container-fluid" id="footer">
         <div class="row justify-content-between">
             <div class="col my-2" style="padding: 0;">
@@ -67,7 +64,7 @@
             </div>
         </div>
     </div>
-</div> -->
+</div>
   
 <router-outlet></router-outlet>
   

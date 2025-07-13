@@ -37,49 +37,14 @@
 <div class="aboutmebg">
     <div class="container">
         <p style="font-size: 2.5em; padding: 0; text-align: center; color: black;" class="pt-3">Album :D</p>
+        
         <div class="row pb-5">
-            <div class="fullwrap p-0 m-1">
-                <img src="assets/about/album/1.jpg" style="height:350px; width:auto;">
-                <div class="fullcap px-5">
-                    The time I got the opportunity to present my research poster at WE LOCAL 23! #day1
-                </div>
-            </div>
-
-            <div class="fullwrap p-0 m-1">
-                <img src="assets/about/album/3.jpg" style="height:350px; width:auto;">
-                <div class="fullcap px-5">
-                    #day2 of WE LOCAL 23
-                </div>
-            </div>
-
-            <div class="fullwrap p-0 m-1">
-                <img src="assets/about/album/athenahacks.JPG" style="height:350px; width:auto;">
-                <div class="fullcap px-5">
-                    My first 24hr in-person hackathon at USC - AthenaHacks 2025!
-                </div>
-            </div>
-
-            <div class="fullwrap p-0 m-1">
-                <img src="assets/about/album/diamondhacks.JPG" style="height:350px; width:auto;">
-                <div class="fullcap px-5">
-                    Demoing my project at UCDC DiamondHacks 2025!
-                </div>
-            </div>
-
-            <div class="fullwrap p-0 m-1">
-                <img src="assets/about/album/2.jpeg" style="height:350px; width:auto;">
-                <div class="fullcap px-5">
-                    New student convocation ceremony at University of Southern California!
-                </div>
-            </div>
-
-            <div class="fullwrap p-0 m-1">
-                <img src="assets/about/album/hacknight.jpeg" style="height:350px; width:auto;">
-                <div class="fullcap px-5">
-                    Pitching my personal project at hack-night - USC HackSC 2024!
-                </div>
+            <div class="fullwrap p-0 m-1" *ngFor="let image of images.reverse()">
+                <img [src]="'assets/about/album/' + image.path" style="height:350px; width:auto;">
+                <div class="fullcap px-5">{{ image.caption }}</div>
             </div>
         </div>
+
     </div>
 </div>
 
