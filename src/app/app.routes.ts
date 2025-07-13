@@ -14,8 +14,9 @@ import { YouComponent } from './components/you/you.component';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'home',
-        pathMatch: 'full'
+        component: HomeComponent
+        // redirectTo: 'home',
+        // pathMatch: 'full'
     },
     {
         path: 'home', 
