@@ -15,7 +15,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'portfolio';
+  title = 'devankshi';
   targetX = 0;
   targetY = 0;
   imageX = 0;
