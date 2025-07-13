@@ -50,8 +50,20 @@
                     <br>4. Both projects are still in progress, and I’ll share more once they’re polished. The current images are just rough drafts to give a sneak peek.
                 </p>
             </div>
+
+            <div class="row pb-5">
+                <img src="assets/work-tech/marshall/disease-2.png" (click)="openImage('disease-2.png')" class="click-to-expand" style="height:250px; width:auto; border-radius: 10px;">
+                <img src="assets/work-tech/marshall/diagnoses.png" (click)="openImage('diagnoses.png')" class="click-to-expand" style="height:250px; width:auto; border-radius: 10px;">
+                <img src="assets/work-tech/marshall/fire-map.png" (click)="openImage('fire-map.png')" class="click-to-expand" style="height:250px; width:auto; border-radius: 10px;">
+            </div>
+
+            <div class="modal-backdrop" *ngIf="selectedImage" (click)="closeImage()">
+                <div class="modal-content" (click)="$event.stopPropagation()">
+                    <img src="assets/work-tech/marshall/{{ selectedImage }}" />
+                </div>
+            </div>
             
-            <div class="row row row-cols-1 row-cols-sm-1 row-cols-md-3 mt-5">
+            <!-- <div class="row row row-cols-1 row-cols-sm-1 row-cols-md-3 mt-5">
                 <div class="col">
                     <img class="img-fluid" src="assets/work-tech/marshall/disease-2.png" style="border-radius: 10px;">
                 </div>
@@ -60,9 +72,9 @@
                 </div>
                 <div class="col">
                     <img class="img-fluid" src="assets/work-tech/marshall/fire-map.png" style="border-radius: 10px;">
-                </div>
-                
-            </div>
+                </div>  
+            </div> -->
+
         </div>
 
         <!-- tech stack -->
