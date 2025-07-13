@@ -7,13 +7,23 @@ import confetti from 'canvas-confetti';
 
 export class ConfettiService {
   celebrate() {
-    // const duration = 3000;
+    // // const duration = 3000;
+
     confetti({
       particleCount: 150,
       spread: 180,
       origin: { y: 0.6 },
       colors: ['#FF4500', '#008080', '#FFD700'],
     });
-    // setTimeout(() => confetti.reset(), duration);
+
+    // // setTimeout(() => confetti.reset(), duration);
+
+    // var scalar = 2;
+    // var pineapple = confetti.shapeFromText({ text: '🐈', scalar });
+
+    // confetti({
+    //   shapes: [pineapple],
+    //   scalar
+    // });
   }
 }
