@@ -23,4 +23,8 @@ export class CurryninjaComponent {
    { path: 'canvasdropart-dtiys.jpg' },
    { path: 'chihiro-haku.jpg' }
  ];
+
+  selectedImage: string | null = null;
+  openImage(path: string) { this.selectedImage = path; }
+  closeImage() { this.selectedImage = null; }
 }

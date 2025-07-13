@@ -40,9 +40,16 @@
     
             <div class="row pb-5">
                 <div class="fullwrap p-0 m-1" *ngFor="let image of images">
-                    <img ngSrc="assets/work-art/curryninja/drawings/{{ image.path }}" style="height:330px; width:auto; position: relative;" fill priority>
+                    <img ngSrc="assets/work-art/curryninja/drawings/{{ image.path }}" (click)="openImage(image.path)" class="click-to-expand" style="height:330px; width:auto; position: relative;" fill priority>
                 </div>
             </div>
+
+            <div class="modal-backdrop" *ngIf="selectedImage" (click)="closeImage()">
+                <div class="modal-content" (click)="$event.stopPropagation()">
+                    <img src="assets/work-art/curryninja/drawings/{{ selectedImage }}" />
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
