@@ -13,6 +13,16 @@ export class AboutComponent {
   rotation: number = 0;
   angle: number = 90;
 
+  selectedImage: { path: string; caption: string } | null = null;
+
+  openImage(image: { path: string; caption: string }) {
+    this.selectedImage = image;
+  }
+
+  closeImage() {
+    this.selectedImage = null;
+  }
+
   images: { path: string, caption: string }[] = [
     { path: 'before-vs-after.jpeg', caption: ':)' },
     { path: 'graduation-ceremony.jpeg', caption: 'Graduation ceremony at USC!' },

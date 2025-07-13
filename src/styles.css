@@ -543,3 +543,37 @@ hr {
     transform: translate(var(--x-position), var(--y-position)) scale(1.25);
     z-index: 999 !important;
 } */
+
+
+
+
+/* expand images */
+
+.modal-backdrop {
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+}
+
+.modal-content {
+  width: auto;
+  margin: 0 auto;
+  border-radius: 0%;
+}
+
+.modal-content img {
+  max-width: 600px;
+  margin: 0 auto;
+  border: 20px solid white;
+}
+
+.modal-caption {
+  text-align: center;
+  margin: 50px;
+}
+
+.click-to-expand:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+  transition: 0.3s ease;
+}
